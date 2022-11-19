@@ -1,0 +1,10 @@
+---
+title: "Jail Scrape"
+output: html_notebook
+---
+
+```{r}
+detainees <- download.file("https://report.boonecountymo.org/mrcjava/servlet/RMS01_MP.R00030s?run=1&D_DETAIL=1&R001=&R002=&outfmt=13", destfile = "data/detainees.xlsx")
+seven_report <- download.file("https://report.boonecountymo.org/mrcjava/servlet/RMS01_MP.R00070s?run=1&D_DETAIL=1&CALCULA007=11%2F19%2F2022&CALCULA008=&outfmt=13", destfile = "data/seven_report.xlsx")
+```
+
